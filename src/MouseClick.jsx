@@ -1,5 +1,6 @@
 export function MouseClick() {
     function handleButtonClick(event) {
+        event.stopPropagation()
         console.log(event.target.src)
     }
 
